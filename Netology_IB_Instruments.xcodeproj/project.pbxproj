@@ -13,6 +13,10 @@
 		A3308A7C2927C5AC003BF07F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3308A7A2927C5AC003BF07F /* Main.storyboard */; };
 		A3308A7E2927C5AC003BF07F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3308A7D2927C5AC003BF07F /* Assets.xcassets */; };
 		A3308A812927C5AC003BF07F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3308A7F2927C5AC003BF07F /* LaunchScreen.storyboard */; };
+		A3308A8D2927C6BF003BF07F /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3308A8C2927C6BF003BF07F /* ProfileView.xib */; };
+		A3308A8F2927CF8D003BF07F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3308A8E2927CF8D003BF07F /* ProfileView.swift */; };
+		A3308A912927D29C003BF07F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3308A902927D29C003BF07F /* Profile.storyboard */; };
+		A3308A932927D2B8003BF07F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3308A922927D2B8003BF07F /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A3308A7D2927C5AC003BF07F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3308A802927C5AC003BF07F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3308A822927C5AC003BF07F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3308A8C2927C6BF003BF07F /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		A3308A8E2927CF8D003BF07F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A3308A902927D29C003BF07F /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		A3308A922927D2B8003BF07F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				A3308A7D2927C5AC003BF07F /* Assets.xcassets */,
 				A3308A7F2927C5AC003BF07F /* LaunchScreen.storyboard */,
 				A3308A822927C5AC003BF07F /* Info.plist */,
+				A3308A8C2927C6BF003BF07F /* ProfileView.xib */,
+				A3308A8E2927CF8D003BF07F /* ProfileView.swift */,
+				A3308A902927D29C003BF07F /* Profile.storyboard */,
+				A3308A922927D2B8003BF07F /* ProfileViewController.swift */,
 			);
 			path = Netology_IB_Instruments;
 			sourceTree = "<group>";
@@ -125,7 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3308A8D2927C6BF003BF07F /* ProfileView.xib in Resources */,
 				A3308A812927C5AC003BF07F /* LaunchScreen.storyboard in Resources */,
+				A3308A912927D29C003BF07F /* Profile.storyboard in Resources */,
 				A3308A7E2927C5AC003BF07F /* Assets.xcassets in Resources */,
 				A3308A7C2927C5AC003BF07F /* Main.storyboard in Resources */,
 			);
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3308A8F2927CF8D003BF07F /* ProfileView.swift in Sources */,
 				A3308A792927C5AC003BF07F /* ViewController.swift in Sources */,
+				A3308A932927D2B8003BF07F /* ProfileViewController.swift in Sources */,
 				A3308A752927C5AC003BF07F /* AppDelegate.swift in Sources */,
 				A3308A772927C5AC003BF07F /* SceneDelegate.swift in Sources */,
 			);
@@ -292,7 +308,7 @@
 				INFOPLIST_FILE = Netology_IB_Instruments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Profile;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,9 +318,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Evgenii.Mikhailov.Netology-IB-Instruments";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +339,7 @@
 				INFOPLIST_FILE = Netology_IB_Instruments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Profile;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,9 +349,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Evgenii.Mikhailov.Netology-IB-Instruments";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
