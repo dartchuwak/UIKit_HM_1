@@ -14,7 +14,6 @@ class ProfileView: UIView {
     @IBOutlet weak var bdateTextLabel: UILabel!
     @IBOutlet weak var locationCityTextLabel: UILabel!
     @IBOutlet weak var profileDetailsTextView: UITextView!
-    
     var image = UIImage(named: "image")
     
     override func awakeFromNib() {
